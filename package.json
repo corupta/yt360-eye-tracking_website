@@ -1,0 +1,28 @@
+{
+  "name": "yt360-chosen-eye_website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "history": "^4.7.2",
+    "inferno": "^3.8.2",
+    "inferno-component": "^3.8.2",
+    "inferno-devtools": "^3.8.2",
+    "inferno-redux": "^3.8.2",
+    "inferno-router": "^3.8.2",
+    "inferno-scripts": "4.2.0",
+    "intersection-observer": "^0.4.2",
+    "js-heap": "^0.3.1",
+    "lozad": "^1.0.2",
+    "qwest": "^4.5.0",
+    "redux": "^3.7.2"
+  },
+  "scripts": {
+    "start": "inferno-scripts start",
+    "build": "inferno-scripts build && mv build docs || move build docs",
+    "test": "inferno-scripts test --env=jsdom",
+    "eject": "inferno-scripts eject"
+  },
+  "engines": {
+    "node": ">=8.11.3 <19.0.0"
+  }
+}
