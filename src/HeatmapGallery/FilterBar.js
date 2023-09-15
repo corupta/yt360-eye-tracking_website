@@ -5,13 +5,14 @@ const styles = {
   container: {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'center',
+    flexWrap: 'wrap',
     alignItems: 'stretch',
     position: 'sticky',
     top: 'calc(2.4vw + 34px)',
     backgroundColor: '#e5e5e5',
     width: '100%',
     zIndex: 99999998,
+    paddingTop: 12,
     paddingBottom: 12,
     boxShadow: '0 2px 4px -3px #444',
   },
@@ -77,7 +78,7 @@ export default class FilterBar extends Component {
 
   render() {
     return (
-      <div style={styles.container}>
+      <div style={styles.container} class="filter-bar">
         <ButtonGroup title='Eye Type' name='eye_type' options={eye_types} filter={this.props.filter} setFilter={this.props.setFilter} isRequired />
         <ButtonGroup title='Color Condition' name='color_condition' options={color_conditions} filter={this.props.filter} setFilter={this.props.setFilter} />
         <ButtonGroup title='Audio Type' name='audio_type' options={audio_types} filter={this.props.filter} setFilter={this.props.setFilter} />

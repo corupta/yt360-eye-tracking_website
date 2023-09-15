@@ -103,7 +103,7 @@ class SingleItem extends Component {
       item.youtube_id
     }-${
       item.youtube_ts
-    }.mp4`;
+    }.png`;
 
     const heatmap_url = `${
       constants.heatmap_url_base
@@ -125,7 +125,7 @@ class SingleItem extends Component {
       item.youtube_ts
     }`;
 
-    const title = `${
+    const title = `View ${
       item.youtube_id
     } at ${
       item.youtube_ts

@@ -2,10 +2,13 @@ import Component from "inferno-component";
 
 const styles = {
   container: {
-    margin: '0 8px',
+    margin: '8px 8px',
+    borderRadius: 4,
+    border: '1px solid #888',
   },
   title: {
-
+    color: '#444',
+    margin: '4px 0',
   },
   buttonGroup: {
 
@@ -14,7 +17,8 @@ const styles = {
 
   },
   buttonSelected: {
-    filter: 'brightness(0.8)'
+    boxShadow:  'inset 0px 2px 4px #b5b5b5, inset 0px -2px 4px #ffffff',
+    // border: '1px inset #e5e5e5',
   }
 }
 
@@ -37,8 +41,8 @@ export default class ButtonGroup extends Component {
 
   render() {
     return (
-      <div style={styles.container}>
-        <h4 style={styles.title}>{this.props.title}</h4>
+      <fieldset style={styles.container}>
+        <legend style={styles.title}>{this.props.title}</legend>
         <div style={styles.buttonGroup} class="btn-group">
           {
             this.props.options.map(({ key, value, label }) => (
@@ -58,7 +62,7 @@ export default class ButtonGroup extends Component {
             ))
           }
         </div>
-      </div>
+      </fieldset>
     )
   }
 }

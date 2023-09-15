@@ -3,7 +3,7 @@
 - [ ] Create Download
 - [ ] Create Heatmap Gallery
   - [X] Create Tags
-  - [ ] Improve Filters
+  - [X] Improve Filters
   - [X] Use Heatmap Thumbnails with a link to heatmap video.
 - [ ] Create Acknowledgements
   - [ ] Acknowledge TUBITAK for funding,

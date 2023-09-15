@@ -13,7 +13,7 @@ const myStyle = {
 const imgStyle = {
   // height: 'calc(50px + 16vw)',
   maxWidth: '90%',
-  maxHeight: '70vh',
+  maxHeight: '67vh',
   display: 'block',
   margin: '0 auto',
 };
