@@ -11,12 +11,12 @@ export default class Home extends Component {
     return (
       <div>
         <div>
-          <h2>YT360-Chosen-Eye Dataset</h2>
+          <h2>YT-360-Chosen-Eye Dataset</h2>
           <p>
             We curated a subset of 360° videos with first order ambisonics from 
             {' '}
             <a href="https://pedro-morgado.github.io/AVSpatialAlignment/" target="_blank" rel="noopener noreferrer nofollow">
-              YT360 Dataset
+              YT-360 Dataset
             </a> 
             {' '}
             containing equal amounts of clips from each scene type (indoor, outdoor-natural, and outdoor-manmade) 
@@ -26,7 +26,7 @@ export default class Home extends Component {
               <li>They should contain valid ambisonics </li>
               <li>They shouldn't be still images </li>
               <li>They shouldn't have any scene cut/jump</li>
-              <li>They should be of 30 seconds long (at least 3 consecutive 10 seconds YT360 clips)</li>
+              <li>They should be of 30 seconds long (at least 3 consecutive 10 seconds YT-360 clips)</li>
               <li>They should have a high resolution (at least 4K or 3840x1920) </li>
               <li>They should fit only one of the audio categories (human speech, music instrument, and vehicle sounds) </li>
               <li>If more than 9 clips are available for a category combination, the ones with seemingly more different 

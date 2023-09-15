@@ -1,14 +1,16 @@
 ## TODOS
 
 - [ ] Create Download
-- [ ] Create Heatmap Gallery
+  - [X] Create a sample download page
+  - [ ] Put actual download links
+- [X] Create Heatmap Gallery
   - [X] Create Tags
   - [X] Improve Filters
   - [X] Use Heatmap Thumbnails with a link to heatmap video.
-- [ ] Create Acknowledgements
-  - [ ] Acknowledge TUBITAK for funding,
-- [ ] Create Attributions
-  - [ ] Attribute to midjourney for website logo.
+- [X] Create Acknowledgements
+  - [X] Acknowledge TUBITAK for funding,
+- [X] Create Attributions
+  - [X] Attribute to midjourney for website logo.
 
 
 

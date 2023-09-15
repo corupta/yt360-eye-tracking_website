@@ -1,5 +1,5 @@
 {
-  "name": "yt360-chosen-eye_website",
+  "name": "yt-360-curated-eye_website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "inferno-scripts start",
-    "build": "inferno-scripts build && mv build docs || move build docs",
+    "build": "inferno-scripts build && (rm -rf docs && mv build docs) || (rmdir /s docs && move build docs)",
     "test": "inferno-scripts test --env=jsdom",
     "eject": "inferno-scripts eject"
   },

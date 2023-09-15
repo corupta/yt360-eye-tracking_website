@@ -17,6 +17,8 @@ import ItemDetails from './ItemDetails/ItemDetails';
 import Download from './Download/Download';
 import HeatmapGallery from './HeatmapGallery/HeatmapGallery';
 import { HeatmapGalleryDescription } from './HeatmapGallery/HeatmapGalleryDescription';
+import Acknowledgements from './Acknowledgements/Acknowledgements';
+import Attributions from './Attributions/Attributions';
 
 const store = createStore(rootReducer);
 
@@ -31,6 +33,8 @@ export default class App extends Component {
         <Main footer={<HeatmapGallery/>}>
           <Home />
           <Download />
+          <Acknowledgements />
+          <Attributions />
           <HeatmapGalleryDescription />
         </Main>
         {/* <Router history={ browserHistory }>

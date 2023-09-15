@@ -20,7 +20,7 @@ export default class Main extends Component {
       <div style={ mainStyle }>
         <TopHeader />
         <Header />
-        <div style={ viewStyle }>
+        <div style={ viewStyle } class="main-pages">
           { this.props.children }
         </div>
         {this.props.footer}
