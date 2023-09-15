@@ -4,6 +4,7 @@ const styles = {
   pre: {
     // backgroundColor: '#e0e0e0',
     fontSize: 10,
+    overflow: 'auto',
   }
 }
 

@@ -103,6 +103,7 @@ VIDEOS.forEach((video) => {
     data.videos.push({
       ...video,
       ...condition,
+      key: `${video.youtube_id}-${video.youtube_ts}-${condition.eye_type}-${condition.color_condition}`,
     });
   });
 });

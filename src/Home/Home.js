@@ -46,9 +46,6 @@ export default class Home extends Component {
             </ul>
             Finally, each observer filled out a questionnaire about their demographic information, 
             their experience with 360° videos, and their experience with video games.
-            {' '}
-            <i>All of the data collected from observers will be made available to the public, once the processing is complete.</i>
-            {' '}
             For more information, please refer to our research paper.
           </p>
           <p>

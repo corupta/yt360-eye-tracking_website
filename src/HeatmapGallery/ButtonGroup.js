@@ -37,6 +37,7 @@ export default class ButtonGroup extends Component {
     } else {
       this.props.setFilter({ [name]: value });
     }
+    e.preventDefault();
   }
 
   render() {

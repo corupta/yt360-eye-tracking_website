@@ -114,6 +114,23 @@
           font-size: 16px;
         }
       }
+
+      .filter-bar {
+        top: calc(3.6vw + 66px); 
+        /* calc(1.2vw+16px) from header link, calc(2.4vw+18px) from first header link, 2*16px for header padding. */
+        /* must be precise for sticky */
+      }
+
+      @media screen and (min-width: 526px) {
+        .filter-bar {
+          top: calc(2.4vw + 34px);
+        }
+      }
+
+      .hidden {
+        display: none !important;
+        visibility: hidden !important;
+      }
     </style>
     <title>YT-360-Curated-Eye</title>
     <link rel="shortcut icon" href="/favicon.ico">

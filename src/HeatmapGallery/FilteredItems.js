@@ -86,12 +86,12 @@ class SingleItem extends Component {
     super(props);
   }
   shouldComponentUpdate(nextProps) {
-    return this.props.item !== nextProps.item;
+    return this.props.item !== nextProps.item || this.props.visible !== nextProps.visible;
   }
 
   render() {
 
-    const { item } = this.props;
+    const { item, visible } = this.props;
 
     const thumbnail_url = `${
       constants.thumbnail_url_base
@@ -141,7 +141,7 @@ class SingleItem extends Component {
     ]
 
     return (
-      <div style={styles.item}>
+      <div style={styles.item} class={visible ? undefined : 'hidden'}>
         {/* <a 
           target="_blank"
           rel="noopener noreferrer nofollow"
@@ -195,15 +195,29 @@ class FilteredItems extends Component {
     //     </div>
     //   )
     // }
+    const { filter } = this.props;
     return (
       <div style={styles.container}>
         {
-          this.props.filteredItems.map((item) => {
-            
+          this.props.items.map((item) => {
+            let visible = true;
+            if (filter.audio_type) {
+              if (item.audio_type !== filter.audio_type) visible = false;
+            }
+            if (filter.scene_type) {
+              if (item.scene_type !== filter.scene_type) visible = false;
+            }
+            if (filter.color_condition) {
+              if (item.color_condition !== filter.color_condition) visible = false;
+            }
+            if (filter.eye_type) {
+              if (item.eye_type !== filter.eye_type) visible = false;
+            }
             return (
               <SingleItem 
-                key={`${item.youtube_id}-${item.youtube_ts}-${item.color_condition}-${item.eye_type}`} 
+                key={item.key} 
                 item={item}
+                visible={visible}
               />
             )
           })
@@ -215,26 +229,9 @@ class FilteredItems extends Component {
 
 const mapStateToProps = (state, ownProps) => {
   if (state.loading) {
-    return { loading: true, filteredItems: [] };
+    return { loading: true, items: [] };
   }
-  const { filter } = ownProps;
-  return {
-    filteredItems: state.data.videos.filter((item) => {
-      if (filter.audio_type) {
-        if (item.audio_type !== filter.audio_type) return false;
-      }
-      if (filter.scene_type) {
-        if (item.scene_type !== filter.scene_type) return false;
-      }
-      if (filter.color_condition) {
-        if (item.color_condition !== filter.color_condition) return false;
-      }
-      if (filter.eye_type) {
-        if (item.eye_type !== filter.eye_type) return false;
-      }
-      return true;
-    })
-  }
+  return { loading: false, items: state.data.videos };
 };
 
 const FilteredItemsContainer = connect(mapStateToProps)(FilteredItems);

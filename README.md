@@ -7,6 +7,7 @@
   - [X] Create Tags
   - [X] Improve Filters
   - [X] Use Heatmap Thumbnails with a link to heatmap video.
+  - [ ] Perf optimization for safari/etc. browsers
 - [X] Create Acknowledgements
   - [X] Acknowledge TUBITAK for funding,
 - [X] Create Attributions

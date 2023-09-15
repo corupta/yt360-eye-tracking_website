@@ -8,7 +8,6 @@ const styles = {
     flexWrap: 'wrap',
     alignItems: 'stretch',
     position: 'sticky',
-    top: 'calc(2.4vw + 34px)',
     backgroundColor: '#e5e5e5',
     width: '100%',
     zIndex: 99999998,
