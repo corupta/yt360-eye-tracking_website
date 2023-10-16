@@ -11,7 +11,7 @@ export default class Home extends Component {
     return (
       <div>
         <div>
-          <h2>YT-360-Curated-Eye Dataset</h2>
+          <h2>YT360-EyeTracking Dataset</h2>
           <p>
             We curated a subset of 360° videos with first order ambisonics from 
             {' '}

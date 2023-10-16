@@ -45,19 +45,19 @@ export default class TopHeader extends Component {
       <div style={ myStyle }>
         <h1 style={titleStyle}>
           <img 
-            src="/assets/logos/yt-360-curated-eye.png" 
-            alt="YT-360-Curated-Eye Dataset" 
-            title="YT-360-Curated-Eye Dataset"
+            src="/assets/logos/yt360-eye-tracking.png" 
+            alt="YT360-EyeTracking Dataset" 
+            title="YT360-EyeTracking Dataset"
             style={logoStyle} 
           />
-          YT-360-Curated-Eye Dataset
+          YT360-EyeTracking Dataset
         </h1>
         <h3 style={subtitleStyle}>
           A curated dataset of 360 degree video content with spatial audio, alongside eye-tracking data from observers of different conditions.
         </h3>
         <img 
-          alt="YT-360-Curated-Eye Dataset"
-          title="YT-360-Curated-Eye Dataset"
+          alt="YT360-EyeTracking Dataset"
+          title="YT360-EyeTracking Dataset"
           src="/assets/collages/thumbnails_target_rows__en.png" 
           style={imgStyle} 
         />

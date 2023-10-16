@@ -6,7 +6,7 @@ export default class Attributions extends Component {
       <div>
         <h2>Attributions</h2>
         <p>
-          Website logo was generated from Midjourney via 
+          Website logo was generated via 
           {' '}
           <a 
             href="https://beta.dreamstudio.ai/"
@@ -15,7 +15,7 @@ export default class Attributions extends Component {
           >
             DreamStudio
           </a>
-          . (CC BY-NC 4.0)
+          .
         </p>
       </div>
     );
